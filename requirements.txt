@@ -1,9 +1,10 @@
-Python==3.9
+Python==3.9.6 
+gunicorn==19.9.0
 Flask==2.1.2
 imutils==0.5.4
 joblib==1.1.0
 matplotlib==3.4.3
-numpy==1.21.2
+numpy>=1.21.2
 opencv_python==4.5.3.56
 plotly==5.7.0
 scikit_learn==1.1.2
