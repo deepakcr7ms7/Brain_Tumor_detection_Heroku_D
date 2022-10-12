@@ -1,1 +1,4 @@
-
+# Heres a comment
+*.psd
+*.pdf
+/Files
