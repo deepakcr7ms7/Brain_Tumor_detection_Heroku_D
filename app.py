@@ -11,7 +11,7 @@ import numpy as np
 from tensorflow.keras.applications.vgg16 import preprocess_input
 from whitenoise import WhiteNoise
 
-
+#Deepak
 braintumor_model = load_model('./braintumor.h5')
 #bt_model = pickle.load(open('./mm.pkl', 'rb'))
 UPLOAD_FOLDER = 'static/uploads'
