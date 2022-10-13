@@ -9,7 +9,7 @@ from tensorflow.keras.models import load_model
 
 import numpy as np
 from tensorflow.keras.applications.vgg16 import preprocess_input
-
+from whitenoise import WhiteNoise
 
 
 braintumor_model = load_model('./braintumor.h5')
@@ -18,6 +18,7 @@ UPLOAD_FOLDER = 'static/uploads'
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
 
 app = Flask(__name__)
+app.wsgi_app = WhiteNoise(app.wsgi_app, root="static/")
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.secret_key = "secret key"
