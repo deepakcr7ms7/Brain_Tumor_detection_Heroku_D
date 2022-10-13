@@ -1,1 +1,1 @@
-web: gunicorn app:app
+web: gunicorn Brain_Tumor_detection_Heroku_D:Application --log-file -
